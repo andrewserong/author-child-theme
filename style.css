@@ -1,0 +1,101 @@
+/*---------------------------------------------------------------------------------
+
+  Theme Name: Hemingway Author Child Theme
+  Theme URI: http://www.andersnoren.se/teman/hemingway-wordpress-theme/
+  Description: A child theme for Hemingway, with additional templates useful for authors
+  Author: Andrew Serong
+  Author URI: http://www.andrewserong.com
+  Template: hemingway
+  Version: 1.0.7
+  License: GNU General Public License v2 or later
+  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+  Tags: author, responsive, novel, novels, novelist, books
+  Text Domain: hemingway-child-author
+
+  All files, unless otherwise stated, are released under the GNU General Public License
+  version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+-----------------------------------------------------------------------------------
+
+  0.  Inline featured media within a page (for featureimagecol template)
+  1.  Tiled sub pages view (for pages-listing template)
+
+----------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/*  0. Inline featured media within a page
+/* -------------------------------------------------------------------------------- */
+
+
+.inline-featured-media {
+	max-width: 450px;
+	float: left;
+	margin: 0 1em 1em 0;
+}
+
+@media screen and (min-width: 641px) and (max-width: 960px) {
+	.inline-featured-media {
+		max-width: 320px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.inline-featured-media {
+		width: 100%;
+		max-width: 100%;
+		display: block;
+		float: none;
+	}
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*  0. Tiled sub-pages view
+/* -------------------------------------------------------------------------------- */
+
+
+.tiles-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.tile-outer {
+  padding: 0;
+  margin: 0;
+}
+
+.tile-inner {
+  padding: 1em;
+  margin: 0.5em 0;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  -webkit-transition: all 0.1s ease-in-out;
+   -moz-transition: all 0.1s ease-in-out;
+   -ms-transition: all 0.1s ease-in-out;
+   -o-transition: all 0.1s ease-in-out;
+   transition: all 0.1s ease-in-out;
+}
+
+.tile-inner:hover {
+  background: #f9f9f9;
+}
+
+@media only screen and (min-width: 640px) {
+  .tile-outer {
+    flex-basis: 48%;
+    flex-basis: calc(50% - 0.5em); /* two columns with 0.5em spacing between tiles */
+  }
+}
+@media only screen and (min-width: 960px) {
+  .tile-outer {
+    flex-basis: 32%;
+    flex-basis: calc(33.33% - 0.5em); /* three columns with 0.5em spacing between tiles */
+  }
+}
