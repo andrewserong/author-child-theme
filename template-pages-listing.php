@@ -61,17 +61,6 @@ Template Name: Pages listing
 							</div> <!-- /featured-media -->
 								
 							<?php endif; ?>
-
-							<!-- Commenting out details, but these should be used for screen readers
-							<h2>
-								
-									<?php echo $page->post_title; ?>
-
-							</h2>
-							<div class="entry">
-								<?php echo $page->post_excerpt ?>
-							</div>
-							-->
 						</div>
 					</a>
 			<?php }	// end foreach child_pages ?>

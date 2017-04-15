@@ -13,7 +13,7 @@ Hemingway is an elegant, beautiful theme for blogging, and seems like an ideal f
 ## Additional features of this child theme
 
 1. A **book detail** template. This template uses the featured image attached to a page as a hero image for the page, displayed at the left on larger width screens, and full-width on smaller screens.
-2. A **pages listing** template. This template displays a grid of tiles of the sub-pages of the current page. The tile uses the featured image of the child page as its image, the post title as the title of the tile, and the excerpt of the page for a one-liner.
+2. A **pages listing** template. This template displays a grid of tiles of the sub-pages of the current page. The tile uses the featured image of the child page as its image. Depends on flexbox support in the browser.
 
 ## Supported custom fields
 
