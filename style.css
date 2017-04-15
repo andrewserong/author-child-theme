@@ -1,12 +1,12 @@
 /*---------------------------------------------------------------------------------
 
-  Theme Name: Hemingway Author Child Theme
-  Theme URI: http://www.andersnoren.se/teman/hemingway-wordpress-theme/
+  Theme Name: Author - Hemingway Child Theme
+  Theme URI: https://github.com/andrewserong/author-hemingway-child-theme
   Description: A child theme for Hemingway, with additional templates useful for authors
   Author: Andrew Serong
   Author URI: http://www.andrewserong.com
   Template: hemingway
-  Version: 1.0.7
+  Version: 1.0.8
   License: GNU General Public License v2 or later
   License URI: http://www.gnu.org/licenses/gpl-2.0.html
   Tags: author, responsive, novel, novels, novelist, books
@@ -58,7 +58,7 @@
 .tiles-container {
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   -webkit-flex-direction: row;
   flex-direction: row;

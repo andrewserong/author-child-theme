@@ -39,7 +39,7 @@ Template Name: Pages listing
 	
 			</div> <!-- /post -->
 
-			<div class="tiles-container">
+			<div class="tiles-container" id="tiles-container">
 
 			<?php
 			// reference: https://codex.wordpress.org/Function_Reference/get_pages
@@ -86,3 +86,37 @@ Template Name: Pages listing
 </div> <!-- /wrapper section-inner -->
 								
 <?php get_footer(); ?>
+
+<script>
+
+// progressive enhancement workaround for last row of justify-content: space-between
+// add additional empty tiles so that last row appears left aligned
+// adjusted very slightly for this template from the code snippet by Lewis Walsh
+// thanks to: https://lewiswalsh.com/flexbox-space-between-and-the-last-row/
+//
+// there will technically be flicker on page load using this, but since the tiles begin
+// 'beneath the fold', this shouldn't be visible to the user
+
+	function checkCount(current_total, next) {
+	  if (current_total % 6) { // Divisible by 3
+	    current_total += 1; // Proper way to do ++
+	    checkCount(current_total, next); // Recursion!
+	  } else {
+	    next(current_total);
+	  }
+	}
+	function addDummyElementsToCards(container_id) {
+	  var container = document.getElementById(container_id);
+	  var card_count = container.children.length;
+	  checkCount(card_count, function(final_count){
+	    var dummy_element;
+	    for(i=0; i<(final_count-card_count); i++) {
+	      dummy_element = document.createElement('div');
+	      dummy_element.className = 'tile-outer';
+	      container.appendChild(dummy_element);
+	    }
+	  });
+	}
+	addDummyElementsToCards('tiles-container'); 
+
+</script>
