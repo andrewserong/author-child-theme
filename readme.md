@@ -4,7 +4,9 @@
 
 This is a simple child theme for the excellent WordPress theme [Hemingway](https://en-au.wordpress.org/themes/hemingway/) by [Anders Noren](http://www.andersnoren.se/teman/hemingway-wordpress-theme/).
 
-**Current status:** in development. This might be interesting to look at or experiment with, but the child theme is not yet complete, and could totally break!
+**Current status:** in development. This child theme was developed for the website for urban fantasy author [Anna McIlwraith](https://www.annamcilwraith.com), is under active development, and is likely to change without notice. Feel free to have a play and fork if you like it!
+
+![Screenshot of Author - Hemingway Child Theme in use](https://raw.githubusercontent.com/andrewserong/author-hemingway-child-theme/master/screenshot.jpg)
 
 ## Objective
 
