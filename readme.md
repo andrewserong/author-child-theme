@@ -24,6 +24,7 @@ The following custom fields can be added to a page, and will be rendered beneath
 * series_title - the title of the series (if the book is a part of a series)
 * series_permalink - a URL to link to the series title
 * book_number - which number the book is, within the series
+* hide_in_pages_listing - a y/n field to hide a book from the pages-listing template
 
 The theme also switches on the 'excerpt' feature for pages.
 
