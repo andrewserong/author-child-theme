@@ -75,7 +75,25 @@
 
 							<div class="hero-caption-container">
 
-								<p class="hero-caption"><?php echo esc_html( get_post( get_post_thumbnail_id() )->post_excerpt ); ?></p>
+								<p class="hero-caption">
+									<?php
+
+										echo wp_kses(
+											get_post( get_post_thumbnail_id() )->post_excerpt,
+											array(
+												'a'      => array(
+													'href'  => array(),
+													'title' => array(),
+												),
+												'br'     => array(),
+												'em'     => array(),
+												'strong' => array(),
+											)
+										);
+
+									?>
+
+								</p>
 
 							</div>
 
